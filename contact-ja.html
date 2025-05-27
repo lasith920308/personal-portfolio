@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>お問い合わせ | パーソナルポートフォリオ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">ラスィス</div>
+      <ul class="nav-links">
+        <li><a href="index-ja.html">ホーム</a></li>
+        <li><a href="about-ja.html">私について</a></li>
+        <li><a href="resume-ja.html">履歴書</a></li>
+        <li><a href="services-ja.html">サービス</a></li>
+        <li><a href="portfolio-ja.html">ポートフォリオ</a></li>
+        <li><a href="contact-ja.html" class="active">お問い合わせ</a></li>
+        <li><a href="contact.html">English</a></li>
+        <li><a href="contact-ja.html">日本語</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-title">  
+        <h1>お問い合わせ</h1>
+        <p class="mb-0">「少なくとも私の実験によって学んだことはこれです：人が自分の夢に向かって自信を持って進み、思い描いた人生を生きようと努めれば、平凡な時間の中で思いがけない成功に出会うでしょう。」</p>
+    </div>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>住所</h3>
+                <p>新潟県、日本</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>電話番号</h3>
+                <p>(+81)80 1234 5678</p>
+                <p>(+94)75 1234 567</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>メールアドレス</h3>
+                <p>lasithexample@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="email-form">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="お名前" required="">
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="メールアドレス" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="件名" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="メッセージ" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading" style="display: none;">読み込み中</div>
+              <div class="sent-message" style="display: none; color: black;">メッセージが送信されました。ありがとうございます！</div>
+
+              <button type="submit">メッセージを送信</button>
+            </div>
+        </form>
+      </div>
+    </section>
+  </main>  
+
+  <footer>
+    <section class="inspiration">
+      <h2>インスピレーション</h2>
+      <p><em>インスピレーションは自分自身の内側から生まれるものです。前向きでいれば、良いことが起こります。</em></p>
+    </section>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/anuradha.mannaperuma"><img src="images/facebook.png" alt="フェイスブック" /></a>
+      <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="インスタグラム" /></a>
+      <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="リンクトイン" /></a>
+    </div>
+
+    <p>© <strong>ラスィス・アヌラダ</strong> 2025. 無断転載を禁じます。</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("EuB9nYH840MO11G6d");
+    })();
+  </script>
+</body>
+</html>

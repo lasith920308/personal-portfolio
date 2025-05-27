@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Personal Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">LASITH</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">English</a></li>
+        <li><a href="contact-ja.html">日本語</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-title">  
+        <h1>Contact</h1>
+        <p class="mb-0">“I learned this, at least, by my experiment: that if one advances confidently 
+        in the direction of his dreams, and endeavors to live the life which he has imagined, 
+        he will meet with a success unexpected in common hours.”</p>
+    </div>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Niigata, Japan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>(+81)80 1234 5678 </p>
+                <p>(+94)75 1234 567 </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>lasithexample@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="email-form">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading" style="display: none;">Loading</div>
+              <div class="sent-message" style="display: none; color: black;">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+        </form>
+      </div>
+    </section>
+  </main>  
+
+  <footer>
+    <section class="inspiration">
+      <h2>Inspiration</h2>
+      <p><em>Inspiration comes from within yourself. One has to be positive. When you’re positive, good things happen.</em></p>
+    </section>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/anuradha.mannaperuma"><img src="images/facebook.png" alt="fb" /></a>
+      <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="ig" /></a>
+      <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="li" /></a>
+    </div>
+
+    <p>© <strong>Lasith Anuradha</strong> 2025. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("EuB9nYH840MO11G6d");
+        })();
+    </script>
+
+</body>
+</html>
